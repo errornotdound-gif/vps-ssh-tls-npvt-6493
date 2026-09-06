@@ -1,11 +1,16 @@
-# VPS WireGuard
+# VPS tunnel configs
 
-Download: https://github.com/errornotdound-gif/vps-ssh-tls-npvt-6493/raw/main/VPS-WireGuard.conf
+## WireGuard (download)
+https://github.com/errornotdound-gif/vps-ssh-tls-npvt-6493/raw/main/VPS-WireGuard.conf
 
-## Important (AWS)
-In EC2 → Security Group of the instance, add inbound rule:
-- Type: Custom UDP
-- Port: 51820
-- Source: 0.0.0.0/0
+Raw:
+https://raw.githubusercontent.com/errornotdound-gif/vps-ssh-tls-npvt-6493/main/VPS-WireGuard.conf
 
-Without this rule the phone shows Connected but there is NO Internet (no handshake).
+### AWS Security Group (required)
+EC2 → instance → Security → Security Group → Edit inbound rules → Add:
+- Type: **Custom UDP**
+- Port: **51820**
+- Source: **0.0.0.0/0**
+- Save
+
+Without UDP 51820 open: phone shows Active but NO internet (no handshake).
