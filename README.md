@@ -1,14 +1,15 @@
-# VPS NPV Tunnel BOOST
+# VPS SSH-TLS (NPV Tunnel)
 
-Download (import in NPV Tunnel / NapsternetV):
-https://github.com/errornotdound-gif/vps-ssh-tls-npvt-6493/raw/main/VPS-SSH-TLS-BOOST.npvt
+Download:
+https://github.com/errornotdound-gif/vps-ssh-tls-npvt-6493/raw/main/VPS-SSH-TLS.npvt
 
-Raw:
-https://raw.githubusercontent.com/errornotdound-gif/vps-ssh-tls-npvt-6493/main/VPS-SSH-TLS-BOOST.npvt
-
-Profiles inside:
-1. **VPS SSH-TLS BOOST** — port 443 + SNI google.com (bypass DPI)
-2. **VPS SSH SPEED** — port 22 direct (usually much faster if SSH not blocked)
-
-WireGuard (best speed):
-https://github.com/errornotdound-gif/vps-ssh-tls-npvt-6493/raw/main/VPS-WireGuard.conf
+## Manual (if import fails)
+- Type: SSH-TLS
+- Host: 63.179.149.85
+- Port: 443
+- User: tunnel
+- Pass: azqswx@00
+- SNI: google.com
+- TLS: DEFAULT
+- UDPGW: 7300
+- DNS: 1.1.1.1
